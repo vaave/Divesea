@@ -142,6 +142,7 @@
          height: 20px;
          position: relative;
          z-index: 7;
+         cursor: pointer;
          &::before,
          &::after,
          span {

@@ -1,4 +1,4 @@
-const body = document.querySelector('body');
+const html = document.querySelector('html');
 const header = document.querySelector('.header');
 const burger = document.querySelector('.header__burger');
 const menu = document.querySelector('.header__menu');
@@ -6,7 +6,7 @@ const menu = document.querySelector('.header__menu');
 burger.addEventListener('click', () => {
   burger.classList.toggle('active');
   menu.classList.toggle('active');
-  body.classList.toggle('lock');
+  html.classList.toggle('lock');
 });
 
 window.addEventListener("scroll", function() {
@@ -24,7 +24,6 @@ const searchBar = document.querySelector('.header__search');
 
 searchIcon.addEventListener("click", function() {
    searchBar.classList.toggle('active');
-   body.classList.toggle('lock');
 });
 
 const heroSlider = new Swiper('.hero__slider', {
@@ -139,7 +138,7 @@ const closeBtn = document.querySelector('.modal__close');
 for (let i = 0; i < openModalBtns.length; i++) {
    openModalBtns[i].addEventListener('click', function() {
       modal.classList.add('show');
-      body.classList.add('lock');
+      html.classList.add('lock');
    });
 }
 
@@ -157,6 +156,6 @@ window.addEventListener('click', function(event) {
 function closeModal() {
    modal.classList.remove('show');
    if (window.innerWidth > 625) {
-      body.classList.remove('lock')
+      html.classList.remove('lock')
    }
 }

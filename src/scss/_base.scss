@@ -2,6 +2,10 @@
 
 html {
    box-sizing: border-box;
+   overflow-x: hidden;
+   &.lock {
+      overflow: hidden;
+   }
 }
 
 *, 
@@ -20,6 +24,12 @@ img {
    vertical-align: top;
 }
 
+button {
+   cursor: pointer;
+   border: none;
+   background-color: transparent;
+}
+
 .list-reset {
    list-style: none;
    padding: 0;
@@ -30,9 +40,6 @@ body {
    font-family: $poppins;
    background-color: #f9f9f9;
    overflow-x: hidden;
-   &.lock {
-      overflow: hidden;
-   }
 }
 
 .container {

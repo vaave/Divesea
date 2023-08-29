@@ -40,6 +40,7 @@
       @include dynamic-value(width, 245, 247, 350);
       @include dynamic-value(height, 40, 40, 50);
       @include dynamic-value(font-size, 10, 11, 16);
+      border: none;
       background: #ededed url(./../src/img/svg/search.svg) no-repeat;
       background-position: 20px/16px * 1em center;
       font-family: $poppins;

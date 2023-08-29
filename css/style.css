@@ -1,6 +1,10 @@
 /*basic********************************/
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
+}
+html.lock {
+  overflow: hidden;
 }
 
 *,
@@ -19,6 +23,12 @@ img {
   vertical-align: top;
 }
 
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
 .list-reset {
   list-style: none;
   padding: 0;
@@ -29,9 +39,6 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #f9f9f9;
   overflow-x: hidden;
-}
-body.lock {
-  overflow: hidden;
 }
 
 .container {
@@ -120,6 +127,7 @@ body.lock {
   width: clamp(245px, calc(247px + (350 - 247) * ((100vw - 1024px) / 416)), 350px);
   height: clamp(40px, calc(40px + (50 - 40) * ((100vw - 1024px) / 416)), 50px);
   font-size: clamp(10px, calc(11px + (16 - 11) * ((100vw - 1024px) / 416)), 16px);
+  border: none;
   background: #ededed url(./../src/img/svg/search.svg) no-repeat;
   background-position: 1.25em center;
   font-family: "Poppins", sans-serif;
@@ -313,9 +321,7 @@ body.lock {
   z-index: 1;
   width: 60px;
   height: 60px;
-  border-radius: 17px;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+  border-radius: 0 17px 17px 0;
   background: #e8e8e8 url(./../src/img/svg/arrow-next.svg) center center no-repeat;
   box-shadow: 0 43px 34px -10px rgba(15, 15, 15, 0.12);
 }
@@ -1247,6 +1253,7 @@ body.lock {
     height: 20px;
     position: relative;
     z-index: 7;
+    cursor: pointer;
   }
   .header__burger::before, .header__burger::after,
 .header__burger span {

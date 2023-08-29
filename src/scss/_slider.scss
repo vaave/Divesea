@@ -5,9 +5,7 @@
       z-index: 1;
       width: 60px;
       height: 60px;
-      border-radius: 17px;
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
+      border-radius: 0 17px 17px 0;
       background: #e8e8e8 url(./../src/img/svg/arrow-next.svg) center center no-repeat;
       box-shadow: 0 43px 34px -10px rgba(15, 15, 15, 0.12);
       &::after {
