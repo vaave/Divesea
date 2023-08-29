@@ -1,0 +1,127 @@
+.collectors {
+   display: flex;
+   column-gap: 30px;
+
+   &__header {
+      flex: 0 1 42%;
+   }
+
+   &__title {
+      color: #181818;
+      text-align: left;
+      margin: 0 0 45px;
+   }
+
+   &__list {
+      list-style: url(./../src/img/svg/list-icon.svg) inside;
+      @include dynamic-value(margin-bottom, 30, 40, 60);
+   }
+
+   &__item {
+      position: relative;
+      font-family: $poppins;
+      font-size: 16px;
+      color: #12141d;
+      &:not(:last-child) {
+         margin-bottom: 15px;
+      }
+   }
+
+   &__button {
+      display: inline-flex;
+      align-items: center;
+      @extend %button-fill;
+      @include dynamic-value(font-size, 10, 11, 15);
+      padding: 20px/15px * 1em;
+      text-transform: capitalize;
+      svg {
+         width: 1.5em;
+         height: 1.5em;
+         stroke: currentColor;
+         margin-left: 5px;
+      }
+   }
+
+   &__stat {
+      position: relative;
+      flex: 1 1 auto;
+      &::after {
+         content: "";
+         position: absolute;
+         bottom: 0;
+         left: 90%;
+         width: 100vw;
+         height: 39%;
+         background: url(./../src/img/svg/dot-decor.svg) repeat-x;
+      }
+   }
+
+   &__view {
+      max-width: 46%;
+      &--main {
+         margin: 0 auto;
+         min-width: 270px;
+      }
+
+      &--recent {
+         position: absolute;
+         left: 0;
+         bottom: 0;
+         min-width: 240px;
+      }
+
+      &--message {
+         position: absolute;
+         top: 0;
+         right: 0;
+         transform: translateY(-50%);
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 10px;
+
+         .view__img::after {
+            content: url(./../src/img/svg/check.svg);
+            background-color: #45b26b;
+         }
+      }
+   }
+
+   &__message-info {
+      flex: 0 1 71%;
+      display: flex;
+   }
+
+   &__message-text {
+      font-family: $poppins;
+      font-weight: 500;
+      font-size: 13px;
+      color: #141416;
+      margin-bottom: 5px;
+      span {
+         color: #949494;
+      }
+   }
+
+   &__message-stat {
+      font-family: $poppins;
+      font-weight: 600;
+      font-size: 11px;
+      color: #141416;
+      margin-bottom: 7px;
+   }
+
+   &__message-date {
+      font-family: $poppins;
+      font-size: 11px;
+      color: #949494;
+   }
+
+   &__message-img {
+      flex: 0 1 calc(60 / 322 * 100%);
+      img {
+         border-radius: 10px;
+      }
+   }
+}
+

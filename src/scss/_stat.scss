@@ -1,0 +1,25 @@
+.stat {
+   display: flex;
+   flex-wrap: wrap;
+   @include dynamic-value(column-gap, 30, 40, 60);
+
+   &__item {
+      flex: 0 1 calc(33.33% - 40px);
+   }
+
+   &__num {
+      font-family: $publicSans;
+      font-weight: 600;
+      @include dynamic-value(font-size, 25, 26, 37);
+      color: #141416;
+      margin-bottom: 7px;
+   }
+
+   &__text {
+      font-family: $inter;
+      font-weight: 500;
+      font-size: 12px;
+      color: #848586;
+      margin: 0;
+   }
+}

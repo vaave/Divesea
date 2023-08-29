@@ -1,0 +1,14 @@
+$poppins: 'Poppins', sans-serif;
+$inter: 'Inter', sans-serif;
+$manrope: 'Manrope', sans-serif;
+$roboto: 'Roboto', sans-serif;
+$outfit: 'Outfit', sans-serif;
+$urbanist: 'Urbanist', sans-serif;
+$publicSans: 'Public Sans', sans-serif;
+$dmSans: 'DM Sans', sans-serif;
+
+$collection-row-padding: 50px;
+
+@mixin dynamic-value($property, $min-value, $start-value, $max-value) {
+   #{$property}: clamp(#{$min-value}px, calc(#{$start-value}px + (#{$max-value} - #{$start-value}) * ((100vw - 1024px) / 416)), #{$max-value}px);
+}

@@ -1,0 +1,77 @@
+.form {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   column-gap: 30px;
+   padding: 30px;
+   border-radius: 30px;
+   background: #141416;
+
+   &__title {
+      color: #fff;
+      text-align: left;
+      margin-bottom: 7px;
+   }
+
+   &__text {
+      font-family: $poppins;
+      font-weight: 500;
+      font-size: 20px;
+      color: #d4d4d4;
+      margin: 0;
+      @include dynamic-value(margin-bottom, 30, 40, 50);
+   }
+
+   &__btns {
+      display: flex;
+      align-items: center;
+      column-gap: 30px;
+   }
+
+   &__button {
+      font-family: $outfit;
+      font-weight: 600;
+      @include dynamic-value(font-size, 12, 15, 21);
+      border: 1px solid #fff;
+      border-radius: 1em;
+      padding: 20px/21px * 1em 26px/21px * 1em;
+      transition: background-color .2s linear, color .2s linear;
+
+      &--fill {
+         color: #141416;
+         background-color: #fff;
+         &:hover {
+            color: #fff;
+            background-color: #141416;
+         }
+      }
+
+      &--stroke {
+         color: #fff;
+         &:hover {
+            color: #141416;
+            background-color: #fff;
+         }
+      }
+   }
+
+   &__img {
+      position: relative;
+      z-index: 2;
+      img {
+         border-radius: 16px;
+      }
+      &::before {
+         content: "";
+         position: absolute;
+         z-index: -1;
+         top: 20px;
+         right: 20px;
+         width: 100%;
+         height: 100%;
+         background: url(./../src/img/form.jpg) no-repeat;
+         border-radius: 7px;
+         filter: blur(26px);
+      }
+   }
+}

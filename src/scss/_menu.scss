@@ -1,0 +1,29 @@
+.menu {
+
+   &__list {
+      display: flex;
+      align-items: center;
+   }
+
+   &__item {
+      &:not(:last-child) {
+         margin-right: 40px;
+      }
+      &--invisible {
+         display: none;
+      }
+   }
+
+   &__link {
+      font-family: $inter;
+      @include dynamic-value(font-size, 13, 13, 18);
+      font-weight: 500;
+      color: #606060;
+      text-transform: uppercase;
+      transition: color .2s linear;
+      
+      &:hover {
+         color: #141416;
+      }
+   }
+}

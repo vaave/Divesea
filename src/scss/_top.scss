@@ -1,0 +1,26 @@
+.top {
+   position: relative;
+
+   &__slider {
+      position: relative;
+   }
+
+   &__slider-item {
+      @include dynamic-value(flex-basis, 200, 200, 253);
+      width: auto;
+      height: auto;
+   }
+
+   &__slider-btns {
+      display: flex;
+      justify-content: center;
+   }
+
+   &__view {
+      position: absolute;
+      right: 0;
+      bottom: -25%;
+      max-width: 25.76%;
+      min-width: 240px;
+   }
+}

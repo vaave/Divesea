@@ -1,0 +1,115 @@
+.view {
+   border: 1px solid #edf2f7;
+   border-radius: 14px;
+   background-color: #fff;
+   box-shadow: 9px 9px 44px 0 rgba(20, 20, 22, 0.10);
+   padding: 20px 25px;
+
+   &__title {
+      font-family: $poppins;
+      font-weight: 600;
+      font-size: 18px;
+      color: #1a202c;
+      margin-bottom: 23px;
+   }
+
+   &__list {
+      counter-reset: tops;
+   }
+
+   &__item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      counter-increment: tops;
+      &:not(:last-child) {
+         margin-bottom: 15px;
+      }
+      
+   }
+
+   &__info {
+      display: flex;
+      align-items: center;
+   }
+
+   &__img {
+      position: relative;
+      flex: 0 1 48px;
+      margin-right: 7px;
+      img {
+         border-radius: 50%;
+      }
+      &::after {
+         content: counter(tops);
+         position: absolute;
+         top: -5%;
+         right: -3%;
+         width: 21px;
+         height: 21px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background-color: #23262f;
+         border-radius: 50%;
+         font-family: $poppins;
+         font-weight: 600;
+         font-size: 11px;
+         color: #fcfcfd;
+      }
+      &--small {
+         flex-basis: 38px;
+         &::after {
+            top: auto;
+            bottom: 0;
+            width: 17px;
+            height: 17px;
+            color: #141416;
+            background-color: #fff;
+         }
+      }
+   }
+
+   &__name {
+      font-family: $poppins;
+      font-weight: 500;
+      font-size: 12px;
+      color: #23262f;
+      margin: 0 0 3px;
+   }
+
+   &__author {
+      font-family: $poppins;
+      font-size: 10px;
+      color: #777e90;
+   }
+
+   &__follow {
+      border-radius: 7px;
+      border: 2px solid #e6e8ec;
+      padding: 7px 14px;
+      font-family: $dmSans;
+      font-weight: 700;
+      font-size: 12px;
+      color: #23262f;
+      &.followed {
+         background-color: #e6e8ec;
+      }
+   }
+
+   &__stat-current {
+      font-family: $poppins;
+      font-weight: 600;
+      font-size: 13px;
+      color: #141416;
+      padding-left: 17px;
+      background: url(./../src/img/svg/ethereum.svg) left center no-repeat;
+      background-size: 15px 15px;
+      margin-bottom: 3px;
+   }
+
+   &__stat-prcent {
+      font-family: $poppins;
+      font-size: 12px;
+   }
+}

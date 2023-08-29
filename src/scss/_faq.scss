@@ -1,0 +1,81 @@
+.faq {
+   &__item {
+      &.open {
+         .faq__content {
+            opacity: 1;
+            padding: 20px;
+         }
+         .faq__icon {
+            transform: rotate(45deg);
+         }
+      }
+      &:not(:last-child) {
+         margin-bottom: 30px/25px * 1em;
+      }
+   }
+
+   &__control {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 17px/25px * 1em;
+      cursor: pointer;
+      border-bottom: 1px solid #adadad;
+      &::-webkit-detalis-marker {
+         display: none;
+      }
+   }
+
+   &__title {
+      font-family: $poppins;
+      font-weight: 600;
+      @include dynamic-value(font-size, 12, 18, 25);
+      text-align: left;
+      color: #323142;
+      margin: 0;
+   }
+
+   &__icon {
+      flex: 0 0 auto;
+      position: relative;
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      background-color: #141416;
+      border-radius: 100%;
+      transition: transform .3s ease;
+      &::before,
+      &::after {
+         content: "";
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         background-color: #fff;
+      }
+      &::before {
+         width: 50%;
+         height: 3px;
+      }
+      &::after {
+         width: 3px;
+         height: 50%;
+      }
+   }
+
+   &__content {
+      box-sizing: content-box;
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      padding: 0 17px;
+      font-family: $poppins;
+      @include dynamic-value(font-size, 11, 14, 17);
+      color: #12141d;
+      line-height: 1.4;
+      margin: 0;
+      will-change: max-height;
+      transition: all .3s ease;
+   }
+}

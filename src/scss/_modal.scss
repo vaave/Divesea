@@ -1,0 +1,180 @@
+.modal {
+   opacity: 0;
+   visibility: hidden;
+   position: fixed;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   z-index: 10;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, .8);
+   transition: opacity .3s ease, visibility .3s linear;
+   overflow-y: scroll;
+   &.show {
+      opacity: 1;
+      visibility: visible;
+
+      & .modal__content {
+         transform: translateY(0);
+      }
+   }
+
+   &__content {
+      position: relative;
+      display: flex;
+      width: 100%;
+      max-width: 1440px;
+      min-height: 1024px;
+      transform: translateY(-100%);
+      transition: transform .3s ease;
+      @media(max-height: 1050px) {
+         height: 100vh;
+         min-height: 620px;
+         margin-top: 0;
+      }
+   }
+
+   &__close {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      z-index: 2;
+      font-size: 35px;
+      font-weight: bold;
+      color: #fff;
+      cursor: pointer;
+   }
+
+   &__signup {
+      flex: 0 1 54%;
+      padding: 15px;
+      background-color: #f9f9f9;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+
+   &__logo {
+      margin-bottom: 10px;
+   }
+
+   &__form {
+      width: 60%;
+      align-self: center;
+      margin-bottom: 5px;
+   }
+
+   &__form-title {
+      font-family: $poppins;
+      font-weight: 600;
+      @include dynamic-value(font-size, 25, 28, 35);
+      color: #323142;
+      margin: 0 0 100px/35px * 1em;
+      text-align: center;
+   }
+
+   &__form-list {
+      margin-bottom: 50px;
+   }
+
+   &__form-item {
+      padding: 20px 29px;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 5px 10px 50px 0 rgba(0, 0, 0, 0.10);
+      padding-left: 80px/18px * 1em;
+      background-size: 30px 30px;
+      &:not(:last-child) {
+         margin-bottom: 30px;
+      }
+      &--metamask {
+         background: url(./../src/img/logos/metamask.png) 20px center no-repeat;
+      }
+
+      &--trustwallet {
+         background: url(./../src/img/logos/trust-wallet.png) 20px center no-repeat;
+      }
+
+      &--link {
+         background: url(./../src/img/logos/link.png) 20px center no-repeat;
+      }
+   }
+
+   &__form-link {
+      font-family: $poppins;
+      font-weight: 600;
+      @include dynamic-value(font-size, 12, 14, 18);
+      color: #000;
+   }
+
+   &__form-button {
+      @extend %button-fill;
+      width: 100%;
+      padding: 20px 0;
+      text-transform: uppercase;
+   }
+
+   &__bottom {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__bottom-links {
+      font-family: $poppins;
+      color: #aaaaaa;
+      @include dynamic-value(font-size, 10, 11, 16);
+   }
+
+   &__decor {
+      flex: 0 1 46%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #141416;
+   }
+   
+   &__decor-body {
+      max-width: 60%;
+      margin: 0 auto;
+      text-align: center;
+   }
+
+   &__decor-img {
+      position: relative;
+      z-index: 2;
+      margin-bottom: 50px;
+      img {
+         border-radius: 25px;
+      }
+      &::before {
+         content: "";
+         position: absolute;
+         z-index: -1;
+         top: 20px;
+         right: 20px;
+         width: 100%;
+         height: 100%;
+         background: url(./../src/img/collections/1.jpg) no-repeat;
+         border-radius: 7px;
+         filter: blur(26px);
+      }
+   }
+
+   &__decor-title {
+      font-family: $dmSans;
+      font-weight: 700;
+      @include dynamic-value(font-size, 30, 33, 47);
+      color: #fff;
+      margin: 0 0 14px;
+   }
+
+   &__decor-text {
+      font-family: $poppins;
+      @include dynamic-value(font-size, 10, 11, 16);
+      color: #6d6d6d;
+   }
+}

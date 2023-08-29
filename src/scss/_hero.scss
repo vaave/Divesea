@@ -1,0 +1,128 @@
+.hero {
+   @include dynamic-value(padding-top, 120, 120, 220);
+   padding-bottom: 120px;
+
+   &__container {
+      display: flex;
+   }
+
+   &__content {
+      flex: 0 0 100%;
+   }
+
+   &__body {
+      width: 46%;
+      padding-right: 60px;
+   }
+
+   &__header {
+      @include dynamic-value(margin-bottom, 30, 58, 80);
+   }
+
+   &__title {
+      position: relative;
+      font-family: $poppins;
+      font-weight: 600;
+      @include dynamic-value(font-size, 47, 53, 75);
+      color: #141416;
+      text-transform: capitalize;
+      margin: 0 0 16px/75px * 1em;
+      &::before {
+         content: "";
+         position: absolute;
+         top: -5px;
+         left: 0;
+         width: 195px;
+         height: 1px;
+         background-color: rgba($color: #201f1f, $alpha: .2);
+      }
+   }
+
+   &__text {
+      font-family: $inter;
+      @include dynamic-value(font-size, 11, 13, 18);
+      color: #676767;
+      line-height: 1.55;
+      margin: 0 0 45px/18px * 1em;
+      span {
+         color: #141416;
+      }
+   }
+
+   &__btns {
+      display: flex;
+      align-items: center;
+      column-gap: 20px;
+   }
+
+   &__button {
+      @include dynamic-value(font-size, 12, 13, 16);
+      padding: 20px/16px * 1em 30px/16px * 1em;
+      &--fill {
+         @extend %button-fill;
+      }
+      &--stroke {
+         @extend %button-stroke;
+      }
+   }
+
+   &__collage {
+      min-width: 0;
+      flex: 0 0 calc(((100vw - 60px) * 0.54) + 30px);
+      transform: translateX(-100%);
+      display: flex;
+      @include dynamic-value(column-gap, 15, 20, 40);
+      @media(min-width: 1280px) {
+         flex-basis: calc(100vw - (((100vw - 1280px) / 2) + ((1280px - 60px) * 0.46) + 30px));
+      }
+   }
+
+   &__slider {
+      position: relative;
+      min-width: 0;
+      flex: 0 1 391px;
+      padding-bottom: 60px;
+   }
+
+   &__slider-item {
+      position: relative;
+      img {
+         width: 100%;
+         object-fit: cover;
+         border-radius: 18px;
+      }
+   }
+
+   &__slider-btns {
+      display: flex;
+      justify-content: center;
+   }
+
+   &__decor-slider {
+      position: relative;
+      align-self: flex-end;
+      img {
+         border-radius: 16px;
+      }
+      &::before {
+         content: "";
+         position: absolute;
+         left: -15px;
+         bottom: 100%;
+         z-index: -1;
+         width: 45%;
+         height: 40%;
+         background: url(./../src/img/svg/arrow-decor.svg) top center no-repeat;
+         background-size: cover;
+      }
+      &::after {
+         content: "";
+         position: absolute;
+         left: 55%;
+         bottom: 102%;
+         width: 100vw;
+         height: 60%;
+         background: url(./../src/img/svg/dot-decor.svg) left bottom repeat;
+      }
+   }
+}

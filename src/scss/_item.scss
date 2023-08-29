@@ -1,0 +1,72 @@
+.item {
+   display: flex;
+   flex-direction: column;
+   @include dynamic-value(padding, 10, 10, 20);
+   border-radius: 23px;
+   background: #fff;
+   box-shadow: 18px 12px 59px 0 rgba(199, 199, 199, 0.60);
+
+   &__img {
+      position: relative;
+      margin-bottom: 20px;
+      img {
+         width: 100%;
+         object-fit: cover;
+         border-radius: 23px;
+      }
+   }
+
+   &__time {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-family: $poppins;
+      font-weight: 500;
+      font-size: 14px;
+      color: #fff;
+      border-radius: 9px;
+      padding: 10px 14px;
+      border: 1px solid rgba(28, 29, 32, 0.08);
+      background-color: rgba(28, 29, 32, 0.35);
+      box-shadow: 0 5px 14px 0 rgba(28, 29, 32, 0.08);
+      backdrop-filter: blur(2px);
+   }
+
+   &__name {
+      flex: 1 1 auto;
+      font-family: $poppins;
+      font-weight: 600;
+      @include dynamic-value(font-size, 15, 15, 21);
+      color: #141416;
+      margin: 0 0 7px;
+   }
+
+   &__info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__text {
+      font-family: $poppins;
+      @include dynamic-value(font-size, 10, 10, 14);
+      color: #94a3b8;
+      margin: 0 0 5px;
+   }
+
+   &__num {
+      position: relative;
+      font-family: $poppins;
+      font-size: 16px;
+      color: #141416;
+      padding-left: 30px;
+      background: url(./../src/img/svg/ethereum.svg) left center no-repeat;
+      background-size: 25px 25px;
+   }
+
+   &__button {
+      @extend %button-fill;
+      @include dynamic-value(font-size, 10, 10, 14);
+      padding: 10px/14px * 1em 19px/14px * 1em;
+   }
+}

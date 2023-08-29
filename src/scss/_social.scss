@@ -1,0 +1,25 @@
+.social {
+   display: flex;
+   align-items: center;
+
+   &__item {
+      &:not(:last-child) {
+         @include dynamic-value(margin-right, 10, 30, 40);
+      }
+   }
+
+   &__link {
+      svg {
+         width: 22px;
+         height: 22px;
+         fill: #535353;
+         transition: fill .3s linear;
+      }
+
+      &:hover {
+         svg {
+            fill: #fff;
+         }
+      }
+   }
+}

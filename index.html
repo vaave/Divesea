@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&family=Inter:wght@400;500;600&family=Manrope:wght@600;800&family=Outfit:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Public+Sans:wght@600;700&family=Roboto:wght@400;700&family=Urbanist:wght@700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+   <link rel="stylesheet" href="css/style.css">
+   <title>DiveSea</title>
+</head>
+<body>
+
+   <header class="header">
+      <div class="container">
+         <div class="header__body">
+            <a href="#" class="header__logo logo">
+               <img src="./src/img/logo.svg" alt="logo">
+            </a>
+            <nav class="header__menu menu">
+               <ul class="menu__list list-reset">
+                  <li class="menu__item menu__item--invisible">
+                     <a href="#" class="header__button modal-button">Connect wallet</a>
+                  </li>
+                  <li class="menu__item">
+                     <a href="#" class="menu__link">Discover</a>
+                  </li>
+                  <li class="menu__item">
+                     <a href="#" class="menu__link">creators</a>
+                  </li>
+                  <li class="menu__item">
+                     <a href="#" class="menu__link">Sell</a>
+                  </li>
+                  <li class="menu__item">
+                     <a href="#" class="menu__link">Stats</a>
+                  </li>
+               </ul>
+            </nav>
+            <div class="header__form">
+               <input type="text" name="search" placeholder="Search Art Work / Creator" class="header__search">
+               <button class="header__search-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                     <path d="M9.94976 17.7296C14.5695 17.7296 18.3146 13.9845 18.3146 9.3648C18.3146 4.74505 14.5695 1 9.94976 1C5.33001 1 1.58496 4.74505 1.58496 9.3648C1.58496 13.9845 5.33001 17.7296 9.94976 17.7296Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                     <path d="M15.9248 15.3394L23.0946 22.5092" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+               </button>
+               <button type="button" class="header__button header__button--invisible modal-button">Connect wallet</button>
+            </div>
+            <div class="header__burger">
+               <span></span>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <main class="page">
+      <div class="hero">
+         <div class="hero__container">
+            <div class="hero__content">
+               <div class="container">
+                  <div class="hero__body">
+                     <div class="hero__header">
+                        <h1 class="hero__title">Discover And Create NFTs</h1>
+                        <p class="hero__text">Discover, Create and Sell NFTs On&nbsp;Our NFT Marketplace With Over Thousands Of&nbsp;NFTs And Get <span>a&nbsp;$20&nbsp;bonus.</span></p>
+                        <div class="hero__btns">
+                           <a href="#" class="hero__button hero__button--fill">Explore More</a>
+                           <a href="#" class="hero__button hero__button--stroke">Create NFT</a>
+                        </div>
+                     </div>
+                     <ul class="hero__stat stat list-reset">
+                        <li class="stat__item">
+                           <div class="stat__num">430K+</div>
+                           <p class="stat__text">Art Works</p>
+                        </li>
+                        <li class="stat__item">
+                           <div class="stat__num">159K+</div>
+                           <p class="stat__text">Creators</p>
+                        </li>
+                        <li class="stat__item">
+                           <div class="stat__num">87K+</div>
+                           <p class="stat__text">Collections</p>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="hero__collage">
+               <div class="hero__slider list-reset swiper-container">
+                  <div class="swiper-wrapper">
+                     <div class="hero__slider-item swiper-slide">
+                        <img src="./src/img/collections/1.jpg" alt="NFT 1">
+                     </div>
+                     <div class="hero__slider-item swiper-slide">
+                        <img src="./src/img/collections/2.jpg" alt="NFT 1">
+                     </div>
+                     <div class="hero__slider-item swiper-slide">
+                        <img src="./src/img/collections/3.jpg" alt="NFT 1">
+                     </div>
+                  </div>
+                  <div class="hero__slider-btns">
+                     <button class="swiper-button-prev"></button>
+                     <button class="swiper-button-next"></button>
+                  </div>
+               </div>
+               <ul class="hero__decor-slider list-reset">
+                  <li class="hero__decor-item">
+                     <img src="./src/img/hero-decor.jpg" alt="image">
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <section class="section section--gray">
+         <div class="container">
+            <h2 class="section__title">Weekly - Top NFT</h2>
+            <div class="top">
+               <div class="top__slider list-reset swiper-container">
+                  <div class="swiper-wrapper">
+                     <div class="top__slider-item swiper-slide item">
+                        <div class="item__img">
+                           <img src="./src/img/collections/2.jpg" alt="slider image">
+                           <div class="item__time">07h 09m 12s</div>
+                        </div>
+                        <h3 class="item__name">Sun-Glass</h3>
+                        <div class="item__info">
+                           <div class="item__stat">
+                              <p class="item__text">Current bid</p>
+                              <div class="item__num">1.75</div>
+                           </div>
+                           <a href="#" class="item__button">Place bid</a>
+                        </div>
+                     </div>
+                     <div class="top__slider-item swiper-slide item">
+                        <div class="item__img">
+                           <img src="./src/img/collections/3.jpg" alt="slider image">
+                           <div class="item__time">07h 09m 12s</div>
+                        </div>
+                        <h3 class="item__name">Sun-Glass</h3>
+                        <div class="item__info">
+                           <div class="item__stat">
+                              <p class="item__text">Current bid</p>
+                              <div class="item__num">1.75</div>
+                           </div>
+                           <a href="#" class="item__button">Place bid</a>
+                        </div>
+                     </div>
+                     <div class="top__slider-item swiper-slide item">
+                        <div class="item__img">
+                           <img src="./src/img/collections/1.jpg" alt="slider image">
+                           <div class="item__time">07h 09m 12s</div>
+                        </div>
+                        <h3 class="item__name">Sun-Glass</h3>
+                        <div class="item__info">
+                           <div class="item__stat">
+                              <p class="item__text">Current bid</p>
+                              <div class="item__num">1.75</div>
+                           </div>
+                           <a href="#" class="item__button">Place bid</a>
+                        </div>
+                     </div>
+                     <div class="top__slider-item swiper-slide item">
+                        <div class="item__img">
+                           <img src="./src/img/collections/4.jpg" alt="slider image">
+                           <div class="item__time">07h 09m 12s</div>
+                        </div>
+                        <h3 class="item__name">Sun-Glass</h3>
+                        <div class="item__info">
+                           <div class="item__stat">
+                              <p class="item__text">Current bid</p>
+                              <div class="item__num">1.75</div>
+                           </div>
+                           <a href="#" class="item__button">Place bid</a>
+                        </div>
+                     </div>
+                     <div class="top__slider-item swiper-slide item">
+                        <div class="item__img">
+                           <img src="./src/img/collections/5.jpg" alt="slider image">
+                           <div class="item__time">07h 09m 12s</div>
+                        </div>
+                        <h3 class="item__name">Sun-Glass</h3>
+                        <div class="item__info">
+                           <div class="item__stat">
+                              <p class="item__text">Current bid</p>
+                              <div class="item__num">1.75</div>
+                           </div>
+                           <a href="#" class="item__button">Place bid</a>
+                        </div>
+                     </div>
+                     <div class="top__slider-item swiper-slide item">
+                        <div class="item__img">
+                           <img src="./src/img/collections/2.jpg" alt="slider image">
+                           <div class="item__time">07h 09m 12s</div>
+                        </div>
+                        <h3 class="item__name">Sun-Glass</h3>
+                        <div class="item__info">
+                           <div class="item__stat">
+                              <p class="item__text">Current bid</p>
+                              <div class="item__num">1.75</div>
+                           </div>
+                           <a href="#" class="item__button">Place bid</a>
+                        </div>
+                     </div>
+                     <div class="top__slider-item swiper-slide item">
+                        <div class="item__img">
+                           <img src="./src/img/collections/1.jpg" alt="slider image">
+                           <div class="item__time">07h 09m 12s</div>
+                        </div>
+                        <h3 class="item__name">Sun-Glass</h3>
+                        <div class="item__info">
+                           <div class="item__stat">
+                              <p class="item__text">Current bid</p>
+                              <div class="item__num">1.75</div>
+                           </div>
+                           <a href="#" class="item__button">Place bid</a>
+                        </div>
+                     </div>
+                     <div class="top__slider-item swiper-slide item">
+                        <div class="item__img">
+                           <img src="./src/img/collections/3.jpg" alt="slider image">
+                           <div class="item__time">07h 09m 12s</div>
+                        </div>
+                        <h3 class="item__name">Sun-Glass</h3>
+                        <div class="item__info">
+                           <div class="item__stat">
+                              <p class="item__text">Current bid</p>
+                              <div class="item__num">1.75</div>
+                           </div>
+                           <a href="#" class="item__button">Place bid</a>
+                        </div>
+                     </div>
+                     <div class="top__slider-item swiper-slide item">
+                        <div class="item__img">
+                           <img src="./src/img/collections/5.jpg" alt="slider image">
+                           <div class="item__time">07h 09m 12s</div>
+                        </div>
+                        <h3 class="item__name">Sun-Glass</h3>
+                        <div class="item__info">
+                           <div class="item__stat">
+                              <p class="item__text">Current bid</p>
+                              <div class="item__num">1.75</div>
+                           </div>
+                           <a href="#" class="item__button">Place bid</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="top__slider-btns">
+                     <button class="swiper-button-prev"></button>
+                     <button class="swiper-button-next"></button>
+                  </div>
+               </div>
+               <div class="top__view view">
+                  <h3 class="view__title">Recent Viewed</h3>
+                  <ul class="view__list list-reset">
+                     <li class="view__item">
+                        <div class="view__info">
+                           <div class="view__img view__img--small">
+                              <img src="./src/img/collections/1.jpg" alt="image">
+                           </div>
+                           <div class="view__header">
+                              <h4 class="view__name">Alex Ca.</h4>
+                              <div class="view__author">@Alexy</div>
+                           </div>
+                        </div>
+                        <div class="view__stat">
+                           <div class="view__stat-current">8,456</div>
+                           <div class="view__stat-prcent">+23,00%</div>
+                        </div>
+                     </li>
+                     <li class="view__item">
+                        <div class="view__info">
+                           <div class="view__img view__img--small">
+                              <img src="./src/img/collections/2.jpg" alt="image">
+                           </div>
+                           <div class="view__header">
+                              <h4 class="view__name">Juliya S.</h4>
+                              <div class="view__author">@JuliyaS</div>
+                           </div>
+                        </div>
+                        <div class="view__stat">
+                           <div class="view__stat-current">5,327</div>
+                           <div class="view__stat-prcent">-32,01%</div>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="section">
+         <div class="container">
+            <h2 class="section__title">Top Collection</h2>
+            <div class="collection">
+               <table class="collection__table">
+                  <tr class="collection__row">
+                     <th class="collection__title">Collection</th>
+                     <th class="collection__title">Volume</th>
+                     <th class="collection__title">24h %</th>
+                     <th class="collection__title">Floor price</th>
+                     <th class="collection__title">Owners</th>
+                     <th class="collection__title">Items</th>
+                  </tr>
+                  <tr class="collection__row">
+                     <td class="collection__item">
+                        <div class="collection__header">
+                           <div class="collection__img">
+                              <img src="./src/img/collections/1.jpg" alt="">
+                           </div>
+                           <div class="collection__info">
+                              <h3 class="collection__name">Alex Ca.</h3>
+                              <div class="collection__author">By Alex</div>
+                           </div>
+                        </div>
+                     </td>
+                     <td class="collection__item collection__item--decor">8,456</td>
+                     <td class="collection__item collection__item--green">+27.78%</td>
+                     <td class="collection__item collection__item--decor">3,5</td>
+                     <td class="collection__item">2.2K</td>
+                     <td class="collection__item">500</td>
+                  </tr>
+                  <tr class="collection__row">
+                     <td class="collection__item">
+                        <div class="collection__header">
+                           <div class="collection__img">
+                              <img src="./src/img/collections/2.jpg" alt="">
+                           </div>
+                           <div class="collection__info">
+                              <h3 class="collection__name">Juliya Sa.</h3>
+                              <div class="collection__author">By Juliya</div>
+                           </div>
+                        </div>
+                     </td>
+                     <td class="collection__item collection__item--decor">4,780</td>
+                     <td class="collection__item collection__item--green">+27.78%</td>
+                     <td class="collection__item collection__item--decor">7,9</td>
+                     <td class="collection__item">3.4K</td>
+                     <td class="collection__item">900</td>
+                  </tr>
+                  <tr class="collection__row">
+                     <td class="collection__item">
+                        <div class="collection__header">
+                           <div class="collection__img">
+                              <img src="./src/img/collections/3.jpg" alt="">
+                           </div>
+                           <div class="collection__info">
+                              <h3 class="collection__name">Trevor Pu.</h3>
+                              <div class="collection__author">By Trevor</div>
+                           </div>
+                        </div>
+                     </td>
+                     <td class="collection__item collection__item--decor">8,456</td>
+                     <td class="collection__item collection__item--green">+27.78%</td>
+                     <td class="collection__item collection__item--decor">3,5</td>
+                     <td class="collection__item">2.2K</td>
+                     <td class="collection__item">500</td>
+                  </tr>
+                  <tr class="collection__row">
+                     <td class="collection__item">
+                        <div class="collection__header">
+                           <div class="collection__img">
+                              <img src="./src/img/collections/5.jpg" alt="">
+                           </div>
+                           <div class="collection__info">
+                              <h3 class="collection__name">Alex Ca.</h3>
+                              <div class="collection__author">By Alex</div>
+                           </div>
+                        </div>
+                     </td>
+                     <td class="collection__item collection__item--decor">4,780</td>
+                     <td class="collection__item collection__item--green">+27.78%</td>
+                     <td class="collection__item collection__item--decor">7,9</td>
+                     <td class="collection__item">3.4K</td>
+                     <td class="collection__item">900</td>
+                  </tr>
+               </table>
+               <a href="#" class="collection__link link-explore">Explre All
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                     <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/>
+                  </svg>
+               </a>
+            </div>
+         </div>
+      </section>
+      <section class="section">
+         <div class="container">
+            <h2 class="section__title">Explore Marketplace</h2>
+            <div class="marketplace">
+               <div class="marketplace__btns">
+                  <button class="marketplace__button clicked" data-filter="all">All</button>
+                  <button class="marketplace__button" data-filter="category">
+                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+                        <path d="M17.9933 2.56158H7.20502C5.58888 2.56158 4.2666 3.87337 4.2666 5.49999V20.6014C4.2666 22.228 5.58888 23.5503 7.20502 23.5503H17.9933C19.6199 23.5503 20.9317 22.228 20.9317 20.6014V5.49999C20.9317 3.87337 19.6199 2.56158 17.9933 2.56158ZM8.28597 17.705H16.9123C17.3531 17.705 17.6994 18.0618 17.6994 18.4921C17.6994 18.9223 17.3531 19.2791 16.9123 19.2791H8.28597C7.8557 19.2791 7.49889 18.9223 7.49889 18.4921C7.49889 18.0618 7.8557 17.705 8.28597 17.705ZM7.49889 13.0979C7.49889 12.6677 7.8557 12.3109 8.28597 12.3109H16.9123C17.3531 12.3109 17.6994 12.6677 17.6994 13.0979C17.6994 13.5387 17.3531 13.885 16.9123 13.885H8.28597C7.8557 13.885 7.49889 13.5387 7.49889 13.0979ZM16.9123 8.4909H8.28597C7.8557 8.4909 7.49889 8.14459 7.49889 7.70382C7.49889 7.27355 7.8557 6.91674 8.28597 6.91674H16.9123C17.3531 6.91674 17.6994 7.27355 17.6994 7.70382C17.6994 8.14459 17.3531 8.4909 16.9123 8.4909Z"/>
+                        </svg>
+                        Category
+                  </button>
+                  <button class="marketplace__button" data-filter="collection">
+                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+                        <path d="M19.5349 2.60353H6.58476C4.37045 2.60353 2.56543 4.40857 2.56543 6.62288V19.573C2.56543 21.7873 4.37045 23.5923 6.58476 23.5923H19.5349C21.4448 23.5923 23.04 22.249 23.4492 20.465C23.5122 20.3495 23.5542 20.2236 23.5542 20.0872V6.62288C23.5542 4.40857 21.7492 2.60353 19.5349 2.60353ZM20.3219 14.1788C20.3219 14.6091 19.9651 14.9659 19.5349 14.9659C19.0941 14.9659 18.7478 14.6091 18.7478 14.1788V12.017C18.7478 11.5867 19.0941 11.2299 19.5349 11.2299C19.9651 11.2299 20.3219 11.5867 20.3219 12.017V14.1788ZM5.79769 14.1788V12.017C5.79769 11.5867 6.15449 11.2299 6.58476 11.2299C7.02553 11.2299 7.37184 11.5867 7.37184 12.017V14.1788C7.37184 14.6091 7.02553 14.9659 6.58476 14.9659C6.15449 14.9659 5.79769 14.6091 5.79769 14.1788ZM17.0791 9.86565V16.3302C17.0791 16.771 16.7328 17.1173 16.2921 17.1173C15.8618 17.1173 15.505 16.771 15.505 16.3302V9.86565C15.505 9.42488 15.8618 9.07857 16.2921 9.07857C16.7328 9.07857 17.0791 9.42488 17.0791 9.86565ZM13.8469 7.7038V18.492C13.8469 18.9223 13.4901 19.2791 13.0598 19.2791C12.6295 19.2791 12.2727 18.9223 12.2727 18.492V7.7038C12.2727 7.27353 12.6295 6.91673 13.0598 6.91673C13.4901 6.91673 13.8469 7.27353 13.8469 7.7038ZM10.6146 9.86565V16.3302C10.6146 16.771 10.2578 17.1173 9.82756 17.1173C9.38679 17.1173 9.04048 16.771 9.04048 16.3302V9.86565C9.04048 9.42488 9.38679 9.07857 9.82756 9.07857C10.2578 9.07857 10.6146 9.42488 10.6146 9.86565Z"/>
+                     </svg>
+                     Collection
+                  </button>
+                  <button class="marketplace__button" data-filter="price">
+                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 26">
+                        <path d="M12.6548 9.96309V11.978C11.8992 11.7891 11.3955 11.3588 11.3955 10.9705C11.3955 10.5718 11.8992 10.1415 12.6548 9.96309Z"/>
+                        <path d="M15.4878 14.7485C15.4878 15.1368 14.9841 15.5671 14.2285 15.756V13.741C14.9841 13.9194 15.4878 14.3497 15.4878 14.7485Z"/>
+                        <path d="M20.6726 5.61843C18.7416 3.68746 16.1705 2.62753 13.442 2.62753C10.7134 2.62753 8.14232 3.68746 6.21135 5.61843C4.26989 7.54939 3.20996 10.1205 3.20996 12.8596C3.20996 14.2028 3.47232 15.5251 3.98655 16.774C4.50077 18.0228 5.25637 19.1352 6.21135 20.0902C7.15585 21.0452 8.27875 21.7903 9.52758 22.3045C10.7764 22.8292 12.0882 23.0916 13.442 23.0916C14.7958 23.0916 16.1076 22.8292 17.3564 22.3045C18.6052 21.7903 19.7281 21.0452 20.6726 20.0902C21.6276 19.1352 22.3832 18.0228 22.8974 16.774C23.4116 15.5251 23.674 14.2028 23.674 12.8596C23.674 10.1205 22.6141 7.54939 20.6726 5.61843ZM14.2291 17.3616V17.582C14.2291 18.0123 13.8723 18.3691 13.442 18.3691C13.0117 18.3691 12.6549 18.0123 12.6549 17.582V17.3511C11.7314 17.2042 10.9128 16.8054 10.3881 16.2073C10.1572 15.9344 10.1363 15.5356 10.3461 15.2418C10.556 14.9374 10.9338 14.8325 11.2696 14.9584L12.6549 15.4831V13.5732C11.0178 13.3213 9.82142 12.2614 9.82142 10.9706C9.82142 9.66926 11.0178 8.61982 12.6549 8.35746V8.13708C12.6549 7.69632 13.0117 7.35 13.442 7.35C13.8723 7.35 14.2291 7.69632 14.2291 8.13708V8.35746C15.1526 8.51488 15.9711 8.91367 16.4958 9.50135C16.7267 9.77421 16.7477 10.173 16.5378 10.4773C16.3909 10.6872 16.1495 10.8132 15.8977 10.8132C15.8032 10.8132 15.7088 10.7922 15.6143 10.7607L14.2291 10.2255V12.1354C15.8662 12.3873 17.0625 13.4472 17.0625 14.7485C17.0625 16.0498 15.8662 17.0993 14.2291 17.3616Z"/>
+                     </svg>
+                     Price
+                  </button>
+               </div>
+               <ul class="marketplace__items list-reset">
+                  <li class="marketplace__item item" data-filter="category">
+                     <div class="item__img">
+                        <img src="./src/img/collections/1.jpg" alt="slider image">
+                        <div class="item__time">07h 09m 12s</div>
+                     </div>
+                     <h3 class="item__name">Sun-Glass</h3>
+                     <div class="item__info">
+                        <div class="item__stat">
+                           <p class="item__text">Current bid</p>
+                           <div class="item__num">1.75</div>
+                        </div>
+                        <a href="#" class="item__button">Place bid</a>
+                     </div>
+                  </li>
+                  <li class="marketplace__item item" data-filter="collection">
+                     <div class="item__img">
+                        <img src="./src/img/collections/2.jpg" alt="slider image">
+                        <div class="item__time">07h 09m 12s</div>
+                     </div>
+                     <h3 class="item__name">Sun-Glass</h3>
+                     <div class="item__info">
+                        <div class="item__stat">
+                           <p class="item__text">Current bid</p>
+                           <div class="item__num">1.75</div>
+                        </div>
+                        <a href="#" class="item__button">Place bid</a>
+                     </div>
+                  </li>
+                  <li class="marketplace__item item" data-filter="price">
+                     <div class="item__img">
+                        <img src="./src/img/collections/3.jpg" alt="slider image">
+                        <div class="item__time">07h 09m 12s</div>
+                     </div>
+                     <h3 class="item__name">Sun-Glass</h3>
+                     <div class="item__info">
+                        <div class="item__stat">
+                           <p class="item__text">Current bid</p>
+                           <div class="item__num">1.75</div>
+                        </div>
+                        <a href="#" class="item__button">Place bid</a>
+                     </div>
+                  </li>
+                  <li class="marketplace__item item" data-filter="category">
+                     <div class="item__img">
+                        <img src="./src/img/collections/4.jpg" alt="slider image">
+                        <div class="item__time">07h 09m 12s</div>
+                     </div>
+                     <h3 class="item__name">Sun-Glass</h3>
+                     <div class="item__info">
+                        <div class="item__stat">
+                           <p class="item__text">Current bid</p>
+                           <div class="item__num">1.75</div>
+                        </div>
+                        <a href="#" class="item__button">Place bid</a>
+                     </div>
+                  </li>
+                  <li class="marketplace__item item" data-filter="price">
+                     <div class="item__img">
+                        <img src="./src/img/collections/4.jpg" alt="slider image">
+                        <div class="item__time">07h 09m 12s</div>
+                     </div>
+                     <h3 class="item__name">Sun-Glass</h3>
+                     <div class="item__info">
+                        <div class="item__stat">
+                           <p class="item__text">Current bid</p>
+                           <div class="item__num">1.75</div>
+                        </div>
+                        <a href="#" class="item__button">Place bid</a>
+                     </div>
+                  </li>
+                  <li class="marketplace__item item" data-filter="collection">
+                     <div class="item__img">
+                        <img src="./src/img/collections/3.jpg" alt="slider image">
+                        <div class="item__time">07h 09m 12s</div>
+                     </div>
+                     <h3 class="item__name">Sun-Glass</h3>
+                     <div class="item__info">
+                        <div class="item__stat">
+                           <p class="item__text">Current bid</p>
+                           <div class="item__num">1.75</div>
+                        </div>
+                        <a href="#" class="item__button">Place bid</a>
+                     </div>
+                  </li>
+                  <li class="marketplace__item item" data-filter="category">
+                     <div class="item__img">
+                        <img src="./src/img/collections/2.jpg" alt="slider image">
+                        <div class="item__time">07h 09m 12s</div>
+                     </div>
+                     <h3 class="item__name">Sun-Glass</h3>
+                     <div class="item__info">
+                        <div class="item__stat">
+                           <p class="item__text">Current bid</p>
+                           <div class="item__num">1.75</div>
+                        </div>
+                        <a href="#" class="item__button">Place bid</a>
+                     </div>
+                  </li>
+                  <li class="marketplace__item item" data-filter="collection">
+                     <div class="item__img">
+                        <img src="./src/img/collections/1.jpg" alt="slider image">
+                        <div class="item__time">07h 09m 12s</div>
+                     </div>
+                     <h3 class="item__name">Sun-Glass</h3>
+                     <div class="item__info">
+                        <div class="item__stat">
+                           <p class="item__text">Current bid</p>
+                           <div class="item__num">1.75</div>
+                        </div>
+                        <a href="#" class="item__button">Place bid</a>
+                     </div>
+                  </li>
+               </ul>
+               <a href="#" class="marketplace__link link-explore">Explre All
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                     <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/>
+                  </svg>
+               </a>
+            </div>
+         </div>
+      </section>
+      <section class="section">
+         <div class="container">
+            <div class="collectors">
+               <div class="collectors__header">
+                  <h2 class="section__title collectors__title"><span>Just Unleash - <br></span> Your Inner Collector</h2>
+                  <ul class="collectors__list list-reset">
+                     <li class="collectors__item">Best Seller All Around World</li>
+                     <li class="collectors__item">$2M+ Transections Every Day</li>
+                     <li class="collectors__item">Secure Transactions</li>
+                     <li class="collectors__item">Exclusive Collections From Sellers</li>
+                     <li class="collectors__item">Easy Buying and Selling</li>
+                     <li class="collectors__item">Join Our Community</li>
+                  </ul>
+                  <a href="#" class="collectors__button">Explore More
+                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23" fill="none">
+                        <path d="M4.98047 11.0702H17.8973" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11.4365 4.61316L17.8949 11.0716L11.4365 17.53" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                  </a>
+               </div>
+               <div class="collectors__stat">
+                  <div class="collectors__view  collectors__view--message view">
+                     <div class="collectors__message-info">
+                        <div class="collectors__message-author view__img">
+                           <img src="./src/img/collections/1.jpg" alt="author image">
+                        </div>
+                        <div class="collectors__message-about">
+                           <div class="collectors__message-text"><span>New bid</span> Rotation</div>
+                           <div class="collectors__message-stat">0.002 ETH</div>
+                           <div class="collectors__message-date">6 Oct 2022, 11:44 PM</div>
+                        </div>
+                     </div>
+                     <div class="collectors__message-img">
+                        <img src="./src/img/collections/1.jpg" alt="image">
+                     </div>
+                  </div>
+                  <div class="collectors__view collectors__view--main view">
+                     <h3 class="view__title">BestSellers</h3>
+                     <ul class="view__list list-reset">
+                        <li class="view__item">
+                           <div class="view__info">
+                              <div class="view__img">
+                                 <img src="./src/img/collections/1.jpg" alt="image">
+                              </div>
+                              <div class="view__header">
+                                 <h4 class="view__name">Alex Ca.</h4>
+                                 <div class="view__author">@Alexy</div>
+                              </div>
+                           </div>
+                           <button class="view__follow">Follow</button>
+                        </li>
+                        <li class="view__item">
+                           <div class="view__info">
+                              <div class="view__img">
+                                 <img src="./src/img/collections/2.jpg" alt="image">
+                              </div>
+                              <div class="view__header">
+                                 <h4 class="view__name">Juliya Sa.</h4>
+                                 <div class="view__author">@JuliyaS</div>
+                              </div>
+                           </div>
+                           <button class="view__follow">Follow</button>
+                        </li>
+                        <li class="view__item">
+                           <div class="view__info">
+                              <div class="view__img">
+                                 <img src="./src/img/collections/3.jpg" alt="image">
+                              </div>
+                              <div class="view__header">
+                                 <h4 class="view__name">Juliya Sa.</h4>
+                                 <div class="view__author">@JuliyaS</div>
+                              </div>
+                           </div>
+                           <button class="view__follow">Follow</button>
+                        </li>
+                        <li class="view__item">
+                           <div class="view__info">
+                              <div class="view__img">
+                                 <img src="./src/img/collections/4.jpg" alt="image">
+                              </div>
+                              <div class="view__header">
+                                 <h4 class="view__name">Trevor Pu.</h4>
+                                 <div class="view__author">@Trevorpu</div>
+                              </div>
+                           </div>
+                           <button class="view__follow">Follow</button>
+                        </li>
+                        <li class="view__item">
+                           <div class="view__info">
+                              <div class="view__img">
+                                 <img src="./src/img/collections/5.jpg" alt="image">
+                              </div>
+                              <div class="view__header">
+                                 <h4 class="view__name">Alex Ca.</h4>
+                                 <div class="view__author">@Alexy</div>
+                              </div>
+                           </div>
+                           <button class="view__follow">Follow</button>
+                        </li>
+                        <li class="view__item">
+                           <div class="view__info">
+                              <div class="view__img">
+                                 <img src="./src/img/collections/1.jpg" alt="image">
+                              </div>
+                              <div class="view__header">
+                                 <h4 class="view__name">Alex Ca.</h4>
+                                 <div class="view__author">@Alexy</div>
+                              </div>
+                           </div>
+                           <button class="view__follow">Follow</button>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="collectors__view collectors__view--recent view">
+                     <h3 class="view__title">Recent Viewed</h3>
+                     <ul class="view__list list-reset">
+                        <li class="view__item">
+                           <div class="view__info">
+                              <div class="view__img view__img--small">
+                                 <img src="./src/img/collections/1.jpg" alt="image">
+                              </div>
+                              <div class="view__header">
+                                 <h4 class="view__name">Alex Ca.</h4>
+                                 <div class="view__author">@Alexy</div>
+                              </div>
+                           </div>
+                           <div class="view__stat">
+                              <div class="view__stat-current">8,456</div>
+                              <div class="view__stat-prcent">+23,00%</div>
+                           </div>
+                        </li>
+                        <li class="view__item">
+                           <div class="view__info">
+                              <div class="view__img view__img--small">
+                                 <img src="./src/img/collections/2.jpg" alt="image">
+                              </div>
+                              <div class="view__header">
+                                 <h4 class="view__name">Juliya S.</h4>
+                                 <div class="view__author">@JuliyaS</div>
+                              </div>
+                           </div>
+                           <div class="view__stat">
+                              <div class="view__stat-current">5,327</div>
+                              <div class="view__stat-prcent">-32,01%</div>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="section">
+         <div class="container">
+            <h2 class="section__title">Frequently Asked <br> <span>Questions</span></h2>
+            <div class="faq">
+               <ul class="faq__list list-reset">
+                  <li class="faq__item">
+                     <button class="faq__control" aria-expanded="false">
+                        <h3 class="faq__title">What is an NFT?</h3>
+                        <span class="faq__icon"></span>
+                     </button>
+                     <p class="faq__content" aria-hidden="true">
+                        NFT is a unique digital identifier that is recorded on a blockchain, and is used to certify ownership and authenticity. It cannot be copied, substituted, or subdivided. The ownership of an NFT is recorded in the blockchain and can be transferred by the owner, allowing NFTs to be sold and traded. NFTs can be created by anybody, and require few or no coding skills to create.  NFTs typically contain references to digital files such as artworks, photos, videos, and audio. Because NFTs are uniquely identifiable, they differ from cryptocurrencies, which are fungible.
+                     </p>
+                  </li>
+                  <li class="faq__item">
+                     <button class="faq__control" aria-expanded="false">
+                        <h3 class="faq__title">What can I use NFTs for?</h3>
+                        <span class="faq__icon"></span>
+                     </button>
+                     <p class="faq__content" aria-hidden="true">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam repellendus doloribus facilis quia dolores cupiditate excepturi ducimus voluptatem est aspernatur fugiat repellat quo aliquid atque saepe velit delectus perspiciatis adipisci at, aperiam nihil numquam. Molestias, velit accusantium. Magni fugit voluptatibus nisi incidunt dignissimos modi fugiat maxime, nihil corrupti asperiores vero quibusdam excepturi omnis, nam suscipit totam eveniet placeat magnam amet voluptas consequuntur facere hic consectetur optio! Repellendus quos, recusandae rem a assumenda ad error omnis ipsa minima ut ratione beatae amet et accusantium iusto aliquam dolores ducimus nam cumque quidem. Reiciendis magni neque tempora, assumenda architecto et quis cupiditate natus!
+                     </p>
+                  </li>
+                  <li class="faq__item">
+                     <button class="faq__control" aria-expanded="false">
+                        <h3 class="faq__title">What is the difference between an NFT and cryptocurrency?</h3>
+                        <span class="faq__icon"></span>
+                     </button>
+                     <p class="faq__content" aria-hidden="true">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus odit deserunt vitae voluptatum eveniet ab? Soluta laboriosam sit quos laborum corrupti culpa architecto dolores quaerat explicabo sint vero, facere odio cupiditate quam enim ut aliquam. Atque reprehenderit possimus repellendus quia totam, necessitatibus nam accusamus. Officiis optio tempora, earum quos, enim ipsa tenetur nostrum dolorum dignissimos eius aliquam cupiditate ratione possimus sit unde incidunt dolore facilis modi dicta provident illum neque?
+                     </p>
+                  </li>
+                  <li class="faq__item">
+                     <button class="faq__control" aria-expanded="false">
+                        <h3 class="faq__title">How much is an NFT worth?</h3>
+                        <span class="faq__icon"></span>
+                     </button>
+                     <p class="faq__content" aria-hidden="true">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem totam adipisci voluptatem consequuntur ipsum voluptates, nobis perspiciatis accusamus ducimus beatae impedit ipsa quo suscipit? Id ducimus commodi blanditiis consectetur excepturi perferendis architecto totam quo fugit explicabo sed perspiciatis quam voluptatem magnam repudiandae facilis, eos, voluptate reprehenderit neque molestiae laborum dolorum omnis. Earum placeat reiciendis iste ad hic itaque harum doloremque ea labore repellat explicabo numquam, atque pariatur fugit. Autem illum voluptate iure tenetur deserunt qui unde veritatis possimus temporibus sunt!
+                     </p>
+                  </li>
+                  <li class="faq__item">
+                     <button class="faq__control" aria-expanded="false">
+                        <h3 class="faq__title">How do I purchase an NFT on your platform?</h3>
+                        <span class="faq__icon"></span>
+                     </button>
+                     <p class="faq__content" aria-hidden="true">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nisi itaque repellat similique velit, suscipit, facere unde hic, nam nemo rerum maiores magni quasi corporis adipisci? Fugit optio nam enim consequuntur obcaecati, quia repudiandae recusandae rerum facere laboriosam ad incidunt, impedit esse ipsa molestias at officiis reprehenderit quibusdam officia architecto aliquid tenetur ea nostrum! Rem dolores officiis omnis ex iste.
+                     </p>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </section>
+      <section class="section">
+         <div class="container">
+            <div class="form">
+               <div class="form__info">
+                  <h2 class="form__title section__title">Create and Sell NFTs</h2>
+                  <p class="form__text">World’s Largest NFT Place</p>
+                  <div class="form__btns">
+                     <a href="#" class="form__button form__button--fill">Expolre More</a>
+                     <a href="#" class="form__button form__button--stroke">Sell Artwork</a>
+                  </div>
+               </div>
+               <div class="form__img">
+                  <img src="./src/img/form.jpg" alt="Image">
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+
+   <footer class="footer">
+      <div class="container">
+         <div class="footer__header">
+            <div class="footer__logo">
+               <img src="./src/img/logo-light.svg" alt="logo">
+               <span>DiveSea</span>
+            </div>
+            <div class="footer__menu">
+               <ul class="menu__list list-reset">
+                  <li class="menu__item">
+                     <a href="#" class="menu__link">Privacy Policy</a>
+                  </li>
+                  <li class="menu__item">
+                     <a href="#" class="menu__link">Term & Conditions</a>
+                  </li>
+                  <li class="menu__item">
+                     <a href="#" class="menu__link">About us</a>
+                  </li>
+                  <li class="menu__item">
+                     <a href="#" class="menu__link">Contact</a>
+                  </li>
+               </ul>
+            </div>
+            <ul class="footer__social footer__social--header social list-reset">
+               <li class="social__item">
+                  <a href="#" class="social__link">
+                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                     </svg>
+                  </a>
+               </li>
+               <li class="social__item">
+                  <a href="#" class="social__link">
+                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/>
+                     </svg>
+                  </a>
+               </li>
+               <li class="social__item">
+                  <a href="#" class="social__link">
+                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                        <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+                     </svg>
+                  </a>
+               </li>
+               <li class="social__item">
+                  <a href="#" class="social__link">
+                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/>
+                     </svg>
+                  </a>
+               </li>
+            </ul>
+         </div>
+         <div class="footer__end">
+            <p class="footer__copyright">© 2023 EATLY All Rights Reserved.</p>
+            <ul class="footer__social footer__social--end social list-reset">
+               <li class="social__item">
+                  <a href="#" class="social__link">
+                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                     </svg>
+                  </a>
+               </li>
+               <li class="social__item">
+                  <a href="#" class="social__link">
+                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/>
+                     </svg>
+                  </a>
+               </li>
+               <li class="social__item">
+                  <a href="#" class="social__link">
+                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                        <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+                     </svg>
+                  </a>
+               </li>
+               <li class="social__item">
+                  <a href="#" class="social__link">
+                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/>
+                     </svg>
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </footer>
+
+
+   <div class="modal">
+      <div class="modal__content">
+         <button class="modal__close">&times;</button>
+         <div class="modal__signup">
+            <a href="index.html" class="modal__logo logo">
+               <img src="./src/img/logo.svg" alt="logo">
+            </a>
+            <div class="modal__form">
+               <h2 class="modal__form-title">Choose Wallet</h2>
+               <ul class="modal__form-list list-reset">
+                  <li class="modal__form-item modal__form-item--metamask">
+                     <a href="#" class="modal__form-link">Metamask</a>
+                  </li>
+                  <li class="modal__form-item modal__form-item--trustwallet">
+                     <a href="#" class="modal__form-link">Trust Wallet</a>
+                  </li>
+                  <li class="modal__form-item modal__form-item--link">
+                     <a href="#" class="modal__form-link">Enter ethereum address</a>
+                  </li>
+               </ul>
+               <button type="button" class="modal__form-button">Next</button>
+            </div>
+            <div class="modal__bottom">
+               <a href="#" class="modal__bottom-links">Privacy Police</a>
+               <a href="#" class="modal__bottom-links">Copyright 2022</a>
+            </div>
+         </div>
+         <div class="modal__decor">
+            <div class="modal__decor-body">
+               <div class="modal__decor-img">
+                  <img src="./src/img/collections/1.jpg" alt="">
+               </div>
+               <h3 class="modal__decor-title">Start Your Own NFT Gallery</h3>
+               <p class="modal__decor-text">CloseSea Is A Great Platform For Discover Largest NFTs And Other Stuff !!</p>
+            </div>
+         </div>
+      </div>
+   </div>
+   
+
+   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+   <script src="./src/js/script.js"></script>
+</body>
+</html>

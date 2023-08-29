@@ -1,0 +1,73 @@
+.header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 8;
+   &.scroll {
+      background-color: #fff;
+
+      .header__body {
+         padding: 15px 0;
+      }
+   }
+
+   &__body {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include dynamic-value(padding-top, 15, 20, 45);
+      @include dynamic-value(padding-bottom, 15, 20, 45);
+      transition: padding .3s ease;
+   }
+
+   &__logo {
+      position: relative;
+      z-index: 5;
+      @include dynamic-value(margin-right, 20, 40, 53);
+   }
+
+   &__menu {
+      flex: 1 1 auto;
+   }
+
+   &__form {
+      display: flex;
+      align-items: center;
+   }
+
+   &__search {
+      @include dynamic-value(width, 245, 247, 350);
+      @include dynamic-value(height, 40, 40, 50);
+      @include dynamic-value(font-size, 10, 11, 16);
+      background: #ededed url(./../src/img/svg/search.svg) no-repeat;
+      background-position: 20px/16px * 1em center;
+      font-family: $poppins;
+      font-weight: 500;
+      color: #c2c3cb;
+      padding-left: 60px/16px * 1em;
+      margin-right: 20px;
+      &:focus {
+         color: #141416;
+      }
+   }
+
+   &__search-icon {
+      display: none;
+      width: 42px;
+      height: 42px;
+      stroke: #141416;
+      margin-right: 20px;
+   }
+
+   &__button {
+      @extend %button-fill;
+      @include dynamic-value(font-size, 10, 11, 16);
+      font-weight: 600;
+      padding: 18px/16px * 1em 30px/16px * 1em;
+   }
+
+   &__burger {
+      display: none;
+   }
+}

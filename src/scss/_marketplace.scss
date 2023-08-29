@@ -1,0 +1,42 @@
+.marketplace {
+
+   &__btns {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      @include dynamic-value(margin-bottom, 50, 70, 100);
+   }
+
+   &__button {
+      display: flex;
+      align-items: center;
+      font-family: $manrope;
+      font-weight: 600;
+      @include dynamic-value(font-size, 10, 11, 15);
+      @extend %button-stroke;
+      padding: 1em;
+      transition: background-color .3s ease-in-out, color .3s ease-in-out;
+      svg {
+         width: 1.7em;
+         height: 1.7em;
+         fill: currentColor;
+         margin-right: 3px;
+      }
+      &.clicked {
+         color: #fff;
+         background-color: #1a202c;
+      }
+   }
+
+   &__items {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 50px 2.7%;
+      @include dynamic-value(margin-bottom, 40, 70, 100);
+   }
+
+   &__item {
+      flex: 0 1 calc(25% - 2.7%/4*3);
+   }
+}

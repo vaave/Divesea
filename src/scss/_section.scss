@@ -1,0 +1,24 @@
+.section {
+   @include dynamic-value(padding-top, 70, 70, 100);
+   @include dynamic-value(padding-bottom, 70, 70, 100);
+   
+   &--gray {
+      background-color: #f1f1f1;
+      .section__title {
+         color: #c5c5c5;
+      }
+   }
+
+   &__title {
+      font-family: $poppins;
+      font-weight: 600;
+      @include dynamic-value(font-size, 30, 32, 45);
+      color: #141416;
+      font-feature-settings: 'clig' off, 'liga' off;
+      text-align: center;
+      margin: 0 0 100px/45px * 1em;
+      span {
+         color: #c5c5c5;
+      }
+   }
+}

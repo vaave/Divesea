@@ -1,0 +1,87 @@
+/*basic********************************/
+
+html {
+   box-sizing: border-box;
+}
+
+*, 
+*::before, 
+*::after {
+   box-sizing: inherit;
+}
+
+a {
+   color: inherit;
+   text-decoration: none;
+}
+
+img {
+   max-width: 100%;
+   vertical-align: top;
+}
+
+.list-reset {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+body {
+   font-family: $poppins;
+   background-color: #f9f9f9;
+   overflow-x: hidden;
+   &.lock {
+      overflow: hidden;
+   }
+}
+
+.container {
+   max-width: 1280px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+
+/*buttons********************************/
+
+%button-fill {
+   font-family: $poppins;
+   color: #fff;
+   text-transform: uppercase;
+   border-radius: 1em;
+   border: 1px solid #141416;
+   background-color: #141416;
+   transition: background-color .3s linear, color .3s linear;
+   &:hover {
+      background-color: #fff;
+      color: #141416;
+   }
+}
+
+%button-stroke {
+   color: #141416;
+   border: 1px solid #141416;
+   border-radius: 1em;
+   background-color: #fff;
+   &:hover {
+      color: #fff;
+      background-color: #141416;
+   }
+}
+
+/*link********************************/
+
+.link-explore {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   font-family: $poppins;
+   font-weight: 500;
+   font-size: 18px;
+   color: #acadb9;
+   font-feature-settings: 'clig' off, 'liga' off;
+   svg {
+      width: 25px;
+      height: 20px;
+      fill: currentColor;
+   }
+}
